@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-model-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-model
+  template:
+    metadata:
+      labels:
+        app: my-model
+    spec:
+      containers:
+      - name: my-model
+        image: myregistry/myapp:latest
+        ports:
+        - containerPort: 8501
+        env:
+        - name: MODEL_NAME
+          value: "my_model"
