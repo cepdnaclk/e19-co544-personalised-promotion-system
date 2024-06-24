@@ -87,13 +87,13 @@ label5.grid(row=4, column=0, padx=10, pady=5, sticky=tk.W)
 label6.grid(row=5, column=0, padx=10, pady=5, sticky=tk.W)
 
 # Create output text area
-output_label = tk.Label(root, text="Output:")
+output_label = tk.Label(root, text="Promotion:")
 output_label.grid(row=6, column=0, padx=10, pady=5, sticky=tk.W)
 output_entry = tk.Text(root, height=10, width=100, wrap=tk.WORD)
 output_entry.grid(row=6, column=1, columnspan=2, padx=10, pady=5)
 
 # Create button to update output
-update_button = tk.Button(root, text="Update Output", command=update_output)
+update_button = tk.Button(root, text="Check", command=update_output)
 update_button.grid(row=7, columnspan=3, pady=10)
 
 # Run the tkinter main loop
