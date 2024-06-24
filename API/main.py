@@ -6,7 +6,7 @@ from promotions import get_spend_type, get_promotion
 app = Flask(__name__)
 
 # Load the pre-trained K-Modes model
-kmodes_model = joblib.load('kmodes_model_12clusters.pkl')
+kmodes_model = joblib.load('../pkl files/model_with_12_clusters.pkl')
 
 # Define feature decoding dictionaries
 month_decoding = {
