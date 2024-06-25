@@ -1,0 +1,18 @@
+{
+    "Inputs": {
+      "WebServiceInput0": [
+        {
+          "City": "Example City",
+          "Card Type": "Credit",
+          "Exp Type": "Retail",
+          "Gender": "Male",
+          "Year": 2024,
+          "Month": 6,
+          "Day": 24,
+          "Amount": 100
+        }
+      ]
+    },
+    "GlobalParameters": {}
+  }
+  
